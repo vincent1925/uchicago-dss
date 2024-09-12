@@ -56,7 +56,8 @@ const Header = () => {
                   sticky ? "py-5 lg:py-2" : "py-8"
                 } `}
               >
-                <Image
+                {/* TODO(markxiong0122): Replace this with DSS logo */}
+                {/* <Image
                   src="/images/logo/logo-2.svg"
                   alt="logo"
                   width={140}
@@ -69,7 +70,8 @@ const Header = () => {
                   width={140}
                   height={30}
                   className="hidden w-full dark:block"
-                />
+                /> */}
+
               </Link>
             </div>
             <div className="flex w-full items-center justify-between px-4">
@@ -161,7 +163,7 @@ const Header = () => {
               <div className="flex items-center justify-end pr-16 lg:pr-0">
                 <Link
                   href="/signin"
-                  className="hidden px-7 py-3 text-base font-medium text-dark hover:opacity-70 dark:text-white md:block"
+                  className="hidden px-7 py-3 text-base font-medium text-dark hover:opacity-70 dark:text-black md:block"
                 >
                   Sign In
                 </Link>
