@@ -1,5 +1,6 @@
 import Image from "next/image";
 
+//TODO: Replace this with DSS project
 const AboutSectionTwo = () => {
   return (
     <section className="py-16 md:py-20 lg:py-28">
