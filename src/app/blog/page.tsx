@@ -14,13 +14,13 @@ const Blog = () => {
   return (
     <>
       <Breadcrumb
-        pageName="Meet UChciago Data Science Society"
+        pageName="Meet UChicago Data Science Society"
         description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius eros eget sapien consectetur ultrices. Ut quis dapibus libero."
       />
 
       <section className="pb-[120px] pt-[120px]">
         <div className="container">
-          <div className="-mx-4 flex flex-wrap justify-center">
+          <div className="-mx-4 flesx flex-wrap justify-center">
             {blogData.map((blog) => (
               <div
                 key={blog.id}

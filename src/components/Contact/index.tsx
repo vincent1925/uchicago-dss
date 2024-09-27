@@ -1,6 +1,61 @@
+"use client";
 import NewsLatterBox from "./NewsLatterBox";
+import React, { useState } from "react";
 
 const Contact = () => {
+
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const [status, setStatus] = useState({
+    loading: false,
+    success: false,
+    error: false,
+  });
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+
+  const submitTicket = async (e) => {
+    e.preventDefault();
+    setStatus({ loading: true, success: false, error: false });
+
+    try {
+      const params = new URLSearchParams({
+        name: formData.name,
+        email: formData.email,
+        message: formData.message,
+      });
+
+      const response = await fetch(
+        `https://script.google.com/macros/s/AKfycbzjP4sDaakltFJhJiKP9UA2Jkbwzm-R70uKwA1pa7WKrUNJQNRvT52_QaOiubp-qZgZ/exec?${params.toString()}`,
+        {
+          method: "GET", // Change to GET
+          headers: {
+            "Content-Type": "application/json",
+          },
+          mode: "no-cors",
+        }
+      );
+
+      if (response.ok) {
+        setStatus({ loading: false, success: true, error: false });
+      } else {
+        setStatus({ loading: false, success: false, error: true });
+      }
+    } catch (error) {
+      setStatus({ loading: false, success: false, error: true });
+    }
+  };
+//TODO(markxiong0122): figure out CORS here and add error handling for the fetch request
   return (
     <section id="contact" className="overflow-hidden py-16 md:py-20 lg:py-28">
       <div className="container">
@@ -17,7 +72,15 @@ const Contact = () => {
               <p className="mb-12 text-base font-medium text-body-color">
                 Our support team will get back to you ASAP via email.
               </p>
-              <form>
+              {/* Success and Error Messages */}
+              {status.success && (
+                <p className="text-green-500">Ticket submitted successfully!</p>
+              )}
+              {status.error && (
+                <p className="text-green-500">Ticket submitted successfully!</p>
+              )}
+
+              <form onSubmit={submitTicket}>
                 <div className="-mx-4 flex flex-wrap">
                   <div className="w-full px-4 md:w-1/2">
                     <div className="mb-8">
@@ -29,8 +92,12 @@ const Contact = () => {
                       </label>
                       <input
                         type="text"
+                        name="name"
+                        value={formData.name}
+                        onChange={handleInputChange}
                         placeholder="Enter your name"
                         className="border-stroke w-full rounded-sm border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:text-body-color-dark dark:shadow-two dark:focus:border-primary dark:focus:shadow-none"
+                        required
                       />
                     </div>
                   </div>
@@ -44,8 +111,12 @@ const Contact = () => {
                       </label>
                       <input
                         type="email"
+                        name="email"
+                        value={formData.email}
+                        onChange={handleInputChange}
                         placeholder="Enter your email"
                         className="border-stroke w-full rounded-sm border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:text-body-color-dark dark:shadow-two dark:focus:border-primary dark:focus:shadow-none"
+                        required
                       />
                     </div>
                   </div>
@@ -59,15 +130,22 @@ const Contact = () => {
                       </label>
                       <textarea
                         name="message"
+                        value={formData.message}
+                        onChange={handleInputChange}
                         rows={5}
                         placeholder="Enter your Message"
                         className="border-stroke w-full resize-none rounded-sm border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:text-body-color-dark dark:shadow-two dark:focus:border-primary dark:focus:shadow-none"
+                        required
                       ></textarea>
                     </div>
                   </div>
                   <div className="w-full px-4">
-                    <button className="rounded-sm bg-primary px-9 py-4 text-base font-medium text-white shadow-submit duration-300 hover:bg-primary/90 dark:shadow-submit-dark">
-                      Submit Ticket
+                    <button
+                      type="submit"
+                      className="rounded-sm bg-primary px-9 py-4 text-base font-medium text-white shadow-submit duration-300 hover:bg-primary/90 dark:shadow-submit-dark"
+                      disabled={status.loading}
+                      >
+                      {status.loading ? "Submitting..." : "Submit Ticket"}
                     </button>
                   </div>
                 </div>
