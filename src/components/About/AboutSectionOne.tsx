@@ -33,7 +33,6 @@ const AboutSectionOne = () => {
                 titleClassName="font-anka-coder"
                 paragraphClassName="font-anka-coder"
               />
-
               <div
                 className="mb-12 max-w-[570px] lg:mb-0"
                 data-wow-delay=".15s"
@@ -54,22 +53,15 @@ const AboutSectionOne = () => {
               </div>
             </div>
 
-            {/* <div className="w-full px-4 lg:w-1/2">
+            <div className="w-full px-4 lg:w-1/2">
               <div className="relative mx-auto aspect-[25/24] max-w-[500px] lg:mr-0">
-                <Image
-                  src="/images/about/about-image.svg"
-                  alt="about-image"
-                  fill
-                  className="mx-auto max-w-full drop-shadow-three dark:hidden dark:drop-shadow-none lg:mr-0"
-                />
-                <Image
-                  src="/images/about/about-image-dark.svg"
-                  alt="about-image"
-                  fill
-                  className="mx-auto hidden max-w-full drop-shadow-three dark:block dark:drop-shadow-none lg:mr-0"
+                <img
+                  src="/images/logo/logo-2.svg"
+                  alt="Custom Logo"
+                  className="w-30 h-auto opacity-50 transform scale-x-[-1]"   
                 />
               </div>
-            </div> */}
+            </div>
           </div>
         </div>
       </div>

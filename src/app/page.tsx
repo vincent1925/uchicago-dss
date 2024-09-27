@@ -21,8 +21,10 @@ export default function Home() {
   return (
     <>
       <ScrollUp />
-      <Hero />
-      <AboutSectionOne />
+      <div className="background-wrapper">
+        <Hero />
+        <AboutSectionOne />
+      </div>
       <AboutSectionTwo />
       <Blog />
       <Contact />
