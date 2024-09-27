@@ -18,8 +18,8 @@ const AboutSectionOne = () => {
   );
 
   return (
-    <section 
-      id="about" 
+    <section
+      id="about"
       className="pt-16 md:pt-20 lg:pt-28 bg-custom-purple">
       <div className="container">
         <div className="border-b border-body-color/[.15] pb-16 dark:border-white/[.15] md:pb-20 lg:pb-28">
@@ -55,10 +55,12 @@ const AboutSectionOne = () => {
 
             <div className="w-full px-4 lg:w-1/2">
               <div className="relative mx-auto aspect-[25/24] max-w-[500px] lg:mr-0">
-                <img
+                <Image
                   src="/images/logo/logo-2.svg"
-                  alt="Custom Logo"
-                  className="w-30 h-auto opacity-50 transform scale-x-[-1]"   
+                  alt="Flipped Logo"
+                  width={500}
+                  height={480}
+                  className="w-30 h-auto opacity-50 transform scale-x-[-1]"
                 />
               </div>
             </div>

@@ -51,15 +51,12 @@ const Header = () => {
           <div className="relative -mx-4 flex items-center justify-between">
           <div className="flex items-center px-4 xl:mr-12"> {/* Flex container for logo and text */}
           <div className="max-w-[140px]">
-            <img
+            <Image
               src="/images/logo/logo-2.svg"
               alt="logo"
-              className="w-20 h-auto dark:hidden"
-            />
-            <img
-              src="/images/logo/logo-2.svg"
-              alt="logo"
-              className="w-20 h-auto hidden dark:block"
+              height={20}
+              width={20}
+              className="w-20 h-auto"
             />
           </div>
             <span className="ml-2 text-2xl text-black font-bold lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 font-anka-coder">

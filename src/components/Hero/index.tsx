@@ -11,22 +11,22 @@ const Hero = () => {
           <div className="-mx-4 flex flex-wrap">
             <div className="w-full px-4">
               <div className="mx-auto max-w-[800px] text-center">
-                <h1 className="mb-5 
-                  text-3xl 
-                  font-bold 
-                  leading-tight 
-                  text-black 
-                  dark:text-black 
-                  sm:text-4xl 
-                  sm:leading-tight 
-                  md:text-5xl 
+                <h1 className="mb-5
+                  text-3xl
+                  font-bold
+                  leading-tight
+                  text-black
+                  dark:text-black
+                  sm:text-4xl
+                  sm:leading-tight
+                  md:text-5xl
                   md:leading-tight
                   font-anka-coder"
                   >
                   data science society
                 </h1>
                 <p className="mb-12 text-base !leading-relaxed text-body-color dark:text-body-color-dark sm:text-lg md:text-xl font-anka-coder">
-                  university of chicago's data science club connecting students with hands-on projects and professional development opportunities
+                  university of chicago&#39;s data science club connecting students with hands-on projects and professional development opportunities
                 </p>
                 <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
                   <Link
