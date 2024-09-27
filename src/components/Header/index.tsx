@@ -41,7 +41,7 @@ const Header = () => {
   return (
     <>
       <header
-        className={`header left-0 top-0 z-40 flex w-full items-center ${
+        className={`header left-0 top-5 z-40 flex w-full items-center ${
           sticky
             ? "dark:bg-gray-dark dark:shadow-sticky-dark fixed z-[9999] bg-white !bg-opacity-80 shadow-sticky backdrop-blur-sm transition"
             : "absolute bg-transparent"
@@ -60,7 +60,7 @@ const Header = () => {
               src="/images/logo/logo-2.svg"
               alt="logo"
               className="w-20 h-auto hidden dark:block"
-            />  
+            />
           </div>
             <span className="ml-2 text-2xl text-black font-bold lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 font-anka-coder">
               {"dss"}
