@@ -49,31 +49,23 @@ const Header = () => {
       >
         <div className="container">
           <div className="relative -mx-4 flex items-center justify-between">
-            <div className="w-60 max-w-full px-4 xl:mr-12">
-              <Link
-                href="/"
-                className={`header-logo block w-full ${
-                  sticky ? "py-5 lg:py-2" : "py-8"
-                } `}
-              >
-                {/* TODO(markxiong0122): Replace this with DSS logo */}
-                <Image
-                  src="/images/logo/logo-2.svg"
-                  alt="logo"
-                  width={140}
-                  height={30}
-                  className="w-full dark:hidden"
-                />
-                <Image
-                  src="/images/logo/logo.svg"
-                  alt="logo"
-                  width={140}
-                  height={30}
-                  className="hidden w-full dark:block"
-                />
-
-              </Link>
-            </div>
+          <div className="flex items-center px-4 xl:mr-12"> {/* Flex container for logo and text */}
+          <div className="max-w-[140px]">
+            <img
+              src="/images/logo/logo-2.svg"
+              alt="logo"
+              className="w-20 h-auto dark:hidden"
+            />
+            <img
+              src="/images/logo/logo-2.svg"
+              alt="logo"
+              className="w-20 h-auto hidden dark:block"
+            />  
+          </div>
+            <span className="ml-2 text-2xl text-black font-bold lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 font-anka-coder">
+              {"dss"}
+            </span>
+          </div>
             <div className="flex w-full items-center justify-between px-4">
               <div>
                 <button
@@ -112,7 +104,7 @@ const Header = () => {
                         {menuItem.path ? (
                           <Link
                             href={menuItem.path}
-                            className={`flex py-2 text-base lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 ${
+                            className={`flex py-2 text-base lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 font-anka-coder ${
                               usePathName === menuItem.path
                                 ? "text-primary dark:text-white"
                                 : "text-dark hover:text-primary dark:text-white/70 dark:hover:text-white"

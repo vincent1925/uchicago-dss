@@ -115,7 +115,7 @@ const Footer = () => {
                       href="/blog"
                       className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
-                      Blog
+                      blog
                     </Link>
                   </li>
                   <li>
@@ -123,7 +123,7 @@ const Footer = () => {
                       href="/"
                       className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
-                      Pricing
+                      pricing
                     </Link>
                   </li>
                   <li>
@@ -131,7 +131,7 @@ const Footer = () => {
                       href="/about"
                       className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
-                      About
+                      about
                     </Link>
                   </li>
                 </ul>
@@ -142,7 +142,7 @@ const Footer = () => {
           <div className="h-px w-full bg-gradient-to-r from-transparent via-[#D2D8E183] to-transparent dark:via-[#959CB183]"></div>
           <div className="py-8">
             <p className="text-center text-base text-body-color dark:text-white">
-              @2024 UChicago Data Science Society
+              copyright © data science society, all rights reserved
               {/* <a
                 href="http://uideck.com"
                 target="_blank"

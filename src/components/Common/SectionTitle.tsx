@@ -4,23 +4,24 @@ const SectionTitle = ({
   width = "570px",
   center,
   mb = "100px",
-}: {
-  title: string;
-  paragraph: string;
-  width?: string;
-  center?: boolean;
-  mb?: string;
+  titleClassName = "", 
+  paragraphClassName = "",// Add this line
 }) => {
   return (
     <>
       <div
-        className={`w-full ${center ? "mx-auto text-center" : ""}`}
+        className={`wow fadeInUp w-full ${center ? "mx-auto text-center" : ""}`}
+        data-wow-delay=".1s"
         style={{ maxWidth: width, marginBottom: mb }}
       >
-        <h2 className="mb-4 text-3xl font-bold !leading-tight text-black dark:text-white sm:text-4xl md:text-[45px]">
+        <h2
+          className={`mb-4 text-3xl font-bold !leading-tight text-black dark:text-white sm:text-4xl md:text-[45px] ${titleClassName}`} // Modify this line
+        >
           {title}
         </h2>
-        <p className="text-base !leading-relaxed text-body-color md:text-lg">
+        <p 
+          className={`text-base font-normal !leading-relaxed text-body-color md:text-lg ${paragraphClassName}`}
+        >
           {paragraph}
         </p>
       </div>
@@ -29,3 +30,4 @@ const SectionTitle = ({
 };
 
 export default SectionTitle;
+

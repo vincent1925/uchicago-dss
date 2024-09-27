@@ -34,19 +34,23 @@ module.exports = {
       // => @media (min-width: 1400px) { ... }
     },
     extend: {
+      fontFamily: {
+        'anca-coder': ["Anca Coder", "sans-serif"],
+      },
       colors: {
         current: "currentColor",
         transparent: "transparent",
         white: "#FFFFFF",
-        black: "#221c69",
+        black: "#5A5092",
         dark: "#1D2430",
-        primary: "#431c76",
+        primary: "#5A5092",
         yellow: "#FBB040",
         "bg-color-dark": "#171C28",
         "body-color": {
-          DEFAULT: "#d3d9e9",
+          DEFAULT: "#00000",
           dark: "#663b94",
         },
+        'custom-purple': '#d2caed',
         stroke: {
           stroke: "#E3E8EF",
           dark: "#353943",
