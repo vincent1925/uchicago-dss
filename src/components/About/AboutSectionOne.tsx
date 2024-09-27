@@ -56,7 +56,7 @@ const AboutSectionOne = () => {
             <div className="w-full px-4 lg:w-1/2">
               <div className="relative mx-auto aspect-[25/24] max-w-[500px] lg:mr-0">
                 <Image
-                  src="/images/logo/logo-2.svg"
+                  src="images/logo/logo-2.svg"
                   alt="Flipped Logo"
                   width={500}
                   height={480}

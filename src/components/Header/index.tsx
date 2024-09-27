@@ -52,7 +52,7 @@ const Header = () => {
           <div className="flex items-center px-4 xl:mr-12"> {/* Flex container for logo and text */}
           <div className="max-w-[140px]">
             <Image
-              src="/images/logo/logo-2.svg"
+              src="images/logo/logo-2.svg"
               alt="logo"
               height={20}
               width={20}
