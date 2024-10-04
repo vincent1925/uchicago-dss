@@ -37,7 +37,7 @@ const Hero = () => {
                   md:text-xl
                   lg:text-xl
                   font-anka-coder">
-                  university of chicago's data science club connecting students with hands-on projects and professional development opportunities
+                  university of chicago&#39;s data science club connecting students with hands-on projects and professional development opportunities
                 </p>
                 <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
                   <Link
