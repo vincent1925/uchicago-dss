@@ -1,4 +1,5 @@
 import SectionTitle from "../Common/SectionTitle";
+import Image from "next/image";
 
 const People = () => {
     return(
@@ -18,9 +19,11 @@ const People = () => {
             <div className="grid gap-8 mb-6 lg:mb-16 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
                 <div className="items-center bg-gray-50 rounded-xl shadow w-auto dark:bg-gray-800 dark:border-gray-700">
                     <a href="#">
-                        <img
+                        <Image
                             src="/images/people/vincent.jpg"
                             alt="vincent"
+                            width={500} 
+                            height={500} 
                             className="w-auto h-auto opacity-100 rounded-xl transform scale-x-[-1]" 
                         />
                     </a>
@@ -57,9 +60,11 @@ const People = () => {
                 </div>            
                 <div className="items-center bg-gray-50 rounded-xl shadow w-auto h-auto dark:bg-gray-800 dark:border-gray-700">
                     <a href="#">
-                        <img
+                        <Image
                             src="/images/people/vincent.jpg"
                             alt="vincent"
+                            width={500} 
+                            height={500}
                             className="w-auto h-auto opacity-100 rounded-xl transform scale-x-[-1]" 
                         />
                     </a>
@@ -72,9 +77,11 @@ const People = () => {
                 </div>
                 <div className="items-center bg-gray-50 rounded-xl shadow w-auto h-auto dark:bg-gray-800 dark:border-gray-700">
                     <a href="#">
-                        <img
+                        <Image
                             src="/images/people/vincent.jpg"
                             alt="vincent"
+                            width={500} 
+                            height={500}
                             className="w-auto h-auto opacity-100 rounded-xl transform scale-x-[-1]" 
                         />
                     </a>
@@ -87,9 +94,11 @@ const People = () => {
                 </div>
                 <div className="items-center bg-gray-50 rounded-xl shadow w-auto h-auto dark:bg-gray-800 dark:border-gray-700">
                     <a href="#">
-                        <img
+                        <Image
                             src="/images/people/vincent.jpg"
                             alt="vincent"
+                            width={500} 
+                            height={500}
                             className="w-auto h-auto opacity-100 rounded-xl transform scale-x-[-1]" 
                         />
                     </a>
@@ -102,9 +111,11 @@ const People = () => {
                 </div>
                 <div className="items-center bg-gray-50 rounded-xl shadow w-auto h-auto dark:bg-gray-800 dark:border-gray-700">
                     <a href="#">
-                        <img
+                        <Image
                             src="/images/people/vincent.jpg"
                             alt="vincent"
+                            width={500} 
+                            height={500}
                             className="w-auto h-auto opacity-100 rounded-xl transform scale-x-[-1]" 
                         />
                     </a>
@@ -117,9 +128,11 @@ const People = () => {
                 </div>
                 <div className="items-center bg-gray-50 rounded-xl shadow w-auto h-auto dark:bg-gray-800 dark:border-gray-700">
                     <a href="#">
-                        <img
+                        <Image
                             src="/images/people/vincent.jpg"
                             alt="vincent"
+                            width={500} 
+                            height={500}
                             className="w-auto h-auto opacity-100 rounded-xl transform scale-x-[-1]" 
                         />
                     </a>
