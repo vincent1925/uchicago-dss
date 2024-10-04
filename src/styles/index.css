@@ -3,28 +3,28 @@
 /* Anka Coder font declarations */
 @font-face {
   font-family: 'Anka Coder';
-  src: '/fonts/AnkaCoder/AnkaCoder-r.ttf' format('truetype');
+  src: '/dss_web/fonts/AnkaCoder/AnkaCoder-r.ttf' format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Anka Coder';
-  src: '/fonts/AnkaCoder/AnkaCoder-b.ttf' format('truetype');
+  src: '/dss_web/fonts/AnkaCoder/AnkaCoder-b.ttf' format('truetype');
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Anka Coder';
-  src: '/fonts/AnkaCoder/AnkaCoder-i.ttf' format('truetype');
+  src: '/dss_web/fonts/AnkaCoder/AnkaCoder-i.ttf' format('truetype');
   font-weight: normal;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'Anka Coder';
-  src: '/fonts/AnkaCoder/AnkaCoder-bi.ttf' format('truetype');
+  src: '/dss_web/fonts/AnkaCoder/AnkaCoder-bi.ttf' format('truetype');
   font-weight: bold;
   font-style: italic;
 }
