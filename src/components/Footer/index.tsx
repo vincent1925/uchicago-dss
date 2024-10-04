@@ -13,7 +13,7 @@ const Footer = () => {
                 <Link href="/" className="mr-[12px] ml-[0px] inline-block">
                   {/* {TODO: Replace this with DSS logo} */}
                   <Image
-                    src="/images/logo/logo-2.svg"
+                    src="images/logo/logo-2.svg"
                     alt="logo"
                     className="w-full dark:hidden"
                     width={40}
