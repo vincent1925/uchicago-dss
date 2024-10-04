@@ -11,7 +11,7 @@ const NewsLatterBox = () => {
         Sign up for our mailing list!
       </h3>
       <p className="mb-11 border-b border-body-color border-opacity-25 pb-11 text-base leading-relaxed text-body-color dark:border-white dark:border-opacity-25 font-anka-coder">
-        We'll remind you of our upcoming meetings and college-wide data science events.
+        We&#39;ll remind you of our upcoming meetings and college-wide data science events.
       </p>
       <div>
         <input
