@@ -1,11 +1,12 @@
 const SectionTitle = ({
   title,
+  description,
   paragraph,
   width = "570px",
   center,
   mb = "100px",
-  titleClassName = "", 
-  paragraphClassName = "",// Add this line
+  titleClassName = "",
+  paragraphClassName = "", // This can be optional now
 }) => {
   return (
     <>
@@ -14,13 +15,51 @@ const SectionTitle = ({
         data-wow-delay=".1s"
         style={{ maxWidth: width, marginBottom: mb }}
       >
-        <h2
-          className={`mb-4 text-3xl font-bold !leading-tight text-black dark:text-white sm:text-4xl md:text-[45px] ${titleClassName}`} // Modify this line
+        <h1
+          className={`
+            mb-4 
+            w-full
+            font-bold 
+            !leading-tight 
+            text-black 
+            dark:text-white 
+            sm:text-4xl
+            md:text-4xl
+            lg:text-4xl
+            xl:text-4xl
+            ${titleClassName}`
+          }
         >
           {title}
+        </h1>
+        <h2
+          className="
+          mb-4 
+          text-xl 
+          font-bold 
+          text-black 
+          dark:text-white 
+          sm:text-xl
+          md:text-xl
+          lg:text-xl
+          xl:text-xl
+          font-anka-coder"
+        >
+          {description}
         </h2>
         <p 
-          className={`text-base font-normal !leading-relaxed text-body-color md:text-lg ${paragraphClassName}`}
+          className={`
+            w-full
+            text-base 
+            font-normal 
+            !leading-relaxed 
+            text-body-color 
+            sm:text-lg
+            md:text-lg
+            lg:text-lg
+            xl:text-lg
+            ${paragraphClassName}`
+          }
         >
           {paragraph}
         </p>
@@ -30,4 +69,3 @@ const SectionTitle = ({
 };
 
 export default SectionTitle;
-

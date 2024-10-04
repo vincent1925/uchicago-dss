@@ -26,38 +26,36 @@ const AboutSectionTwo = () => {
             </div> */}
           </div>
           <div className="w-full px-4 lg:w-1/2">
-            <div className="max-w-[470px]">
+            <div className="max-w-[1000px]">
               <div className="mb-9">
-                <h2 className= "mb-4 text-3xl font-bold !leading-tight text-black dark:text-white sm:text-4xl md:text-[45px] font-anka-coder">
-                {/* <h2 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl"> */}
+                <h2 className= "mb-4 text-4xl font-bold !leading-tight text-black dark:text-white sm:text-4xl md:text-4xl font-anka-coder">
+                {/* <h2 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-lg lg:text-xl xl:text-lg"> */}
                   current projects 
                 </h2>
-                <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl font-anka-coder">
+                <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-xl lg:text-xl xl:text-xl font-anka-coder">
                   worldie
                 </h3>
-                <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed font-anka-coder">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                <p className="text-lg font-medium leading-relaxed text-body-color sm:text-lg lg:text-lg sm:leading-relaxed font-anka-coder">
+                Rescue Social Inc, also known as Worldie — Social Media for Good, is an organization dedicated to helping victims and witnesses of sexual assault, other misconduct, and cover-ups thereof in the film, music, and arts industries in demonstrating these abuses and legislating against them. At the DSS/Worldie partnership project, we are teaming up with Worldie to demonstrate the online harassment and media manipulation against victims by performing sentiment analysis upon 500+ case articles, illustrating how victims and their interests are routinely marginalized and ignored.
                 </p>
               </div>
               <div className="mb-9">
-                <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl font-anka-coder">
-                  project 2
+                <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-xl lg:text-xl xl:text-xl font-anka-coder">
+                  passion project
                 </h3>
-                <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed font-anka-coder">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt.
+                <p className="text-xl font-medium leading-relaxed text-body-color sm:text-xl lg:text-lg sm:leading-relaxed font-anka-coder">
+                  yours can be here!
                 </p>
               </div>
-              <div className="mb-1">
-                <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl font-anka-coder">
+              {/* <div className="mb-1">
+                <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-lg lg:text-xl xl:text-lg font-anka-coder">
                   project 3
                 </h3>
                 <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed font-anka-coder">
                   Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt
                   consectetur adipiscing elit setim.
                 </p>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

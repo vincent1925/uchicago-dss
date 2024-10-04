@@ -11,7 +11,8 @@ const Blog = () => {
       <div className="container">
         <SectionTitle
           title="people"
-          paragraph="here are our board members!"
+          description="our board members!"
+          paragraph=""
           center
           titleClassName = "font-anka-coder"
           paragraphClassName = "font-anka-coder"

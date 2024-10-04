@@ -14,8 +14,8 @@ const Breadcrumb = ({
           <div className="-mx-4 flex flex-wrap items-center">
             <div className="w-full px-4 md:w-8/12 lg:w-7/12">
               <div className="mb-8 max-w-[570px] md:mb-0 lg:mb-12">
-                <h1 className="mb-5 text-2xl font-bold text-black dark:text-white sm:text-3xl">
-                  {pageName}
+                <h1 className="mb-5 text-2xl font-bold text-black dark:text-white sm:text-8xl font-anka-coder">
+                  {/* {pageName} */}
                 </h1>
                 <p className="text-base font-medium leading-relaxed text-body-color">
                   {description}
@@ -28,13 +28,13 @@ const Breadcrumb = ({
                   <li className="flex items-center">
                     <Link
                       href="/"
-                      className="pr-1 text-base font-medium text-body-color hover:text-primary"
+                      className="pr-1 text-xl font-medium text-body-color hover:text-primary font-anka-coder"
                     >
-                      Home
+                      home
                     </Link>
                     <span className="mr-3 block h-2 w-2 rotate-45 border-r-2 border-t-2 border-body-color"></span>
                   </li>
-                  <li className="text-base font-medium text-primary">
+                  <li className="text-xl font-medium text-primary font-anka-coder">
                     {pageName}
                   </li>
                 </ul>
@@ -44,8 +44,8 @@ const Breadcrumb = ({
         </div>
 
         <div>
-          <span className="absolute left-0 top-0 z-[-1]">
-            <svg
+          {/* <span className="absolute left-0 top-0 z-[-1]"> */}
+            {/* <svg
               width="287"
               height="254"
               viewBox="0 0 287 254"
@@ -56,8 +56,8 @@ const Breadcrumb = ({
                 opacity="0.1"
                 d="M286.5 0.5L-14.5 254.5V69.5L286.5 0.5Z"
                 fill="url(#paint0_linear_111:578)"
-              />
-              <defs>
+              /> */}
+              {/* <defs>
                 <linearGradient
                   id="paint0_linear_111:578"
                   x1="-40.5"
@@ -69,18 +69,18 @@ const Breadcrumb = ({
                   <stop stopColor="#4A6CF7" />
                   <stop offset="1" stopColor="#4A6CF7" stopOpacity="0" />
                 </linearGradient>
-              </defs>
-            </svg>
-          </span>
+              </defs> */}
+            {/* </svg> */}
+          {/* </span> */}
           <span className="absolute right-0 top-0 z-[-1]">
-            <svg
+            {/* <svg
               width="628"
               height="258"
               viewBox="0 0 628 258"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
+            > */}
+              {/* <path
                 opacity="0.1"
                 d="M669.125 257.002L345.875 31.9983L524.571 -15.8832L669.125 257.002Z"
                 fill="url(#paint0_linear_0:1)"
@@ -89,8 +89,8 @@ const Breadcrumb = ({
                 opacity="0.1"
                 d="M0.0716344 182.78L101.988 -15.0769L142.154 81.4093L0.0716344 182.78Z"
                 fill="url(#paint1_linear_0:1)"
-              />
-              <defs>
+              /> */}
+              {/* <defs>
                 <linearGradient
                   id="paint0_linear_0:1"
                   x1="644"
@@ -113,8 +113,8 @@ const Breadcrumb = ({
                   <stop stopColor="#4A6CF7" />
                   <stop offset="1" stopColor="#4A6CF7" stopOpacity="0" />
                 </linearGradient>
-              </defs>
-            </svg>
+              </defs> */}
+            {/* </svg> */}
           </span>
         </div>
       </section>

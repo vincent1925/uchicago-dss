@@ -9,7 +9,7 @@ const checkIcon = (
 
 const AboutSectionOne = () => {
   const List = ({ text }) => (
-    <p className="mb-5 flex items-center text-lg font-anka-coder text-body-color">
+    <p className="mb-5 flex items-center text-sm font-anka-coder text-body-color">
       <span className="mr-4 flex h-[30px] w-[30px] items-center justify-center rounded-md bg-primary bg-opacity-10 text-primary">
         {checkIcon}
       </span>
@@ -18,7 +18,7 @@ const AboutSectionOne = () => {
   );
 
   return (
-    <section 
+    <section  
       id="about" 
       className="pt-16 md:pt-20 lg:pt-28 bg-custom-purple">
       <div className="container">
@@ -27,6 +27,7 @@ const AboutSectionOne = () => {
             <div className="w-full px-4 lg:w-1/2">
               <SectionTitle
                 title="the university of chicago's premier data science club"
+                description={""}
                 paragraph="first data science club on campus with qualified RSO status. we are a group of students who are passionate about data science and its applications in various fields."
                 mb="44px"
                 center = {false}
