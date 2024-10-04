@@ -20,7 +20,7 @@ const People = () => {
                 <div className="items-center bg-gray-50 rounded-xl shadow w-auto dark:bg-gray-800 dark:border-gray-700">
                     <a href="#">
                         <Image
-                            src="/dss_web/images/people/vincent.jpg"
+                            src="images/people/vincent.jpg"
                             alt="vincent"
                             width={500} 
                             height={500} 
