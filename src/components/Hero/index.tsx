@@ -10,28 +10,39 @@ const Hero = () => {
         <div className="container">
           <div className="-mx-4 flex flex-wrap">
             <div className="w-full px-4">
-              <div className="mx-auto max-w-[800px] text-center">
-                <h1 className="mb-5
-                  text-3xl
-                  font-bold
-                  leading-tight
-                  text-black
-                  dark:text-black
-                  sm:text-4xl
-                  sm:leading-tight
-                  md:text-5xl
+              <div className="mx-auto max-w-[1400px] text-center">
+                <h1 className="
+                  mb-5
+                  text-3xl 
+                  sm:text-3xl
+                  md:text-3xl
+                  lg:text-3xl 
+                  font-bold 
+                  leading-tight 
+                  text-black 
+                  dark:text-black 
+                  sm:leading-tight 
                   md:leading-tight
                   font-anka-coder"
                   >
                   data science society
                 </h1>
-                <p className="mb-12 text-base !leading-relaxed text-body-color dark:text-body-color-dark sm:text-lg md:text-xl font-anka-coder">
-                  university of chicago&#39;s data science club connecting students with hands-on projects and professional development opportunities
+                <p className="
+                  mb-12 
+                  text-base 
+                  !leading-relaxed 
+                  text-body-color 
+                  dark:text-body-color-dark 
+                  sm:text-xl
+                  md:text-xl
+                  lg:text-xl
+                  font-anka-coder">
+                  university of chicago's data science club connecting students with hands-on projects and professional development opportunities
                 </p>
                 <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
                   <Link
-                    href="https://nextjstemplates.com/templates/saas-starter-startup"
-                    className="rounded-sm bg-primary px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-primary/80 font-anka-coder"
+                    href="https://forms.gle/wdyJ9c2dTtBMiaVLA"
+                    className="rounded-sm bg-primary px-8 py-4 text-lg font-semibold text-white duration-300 ease-in-out hover:bg-primary/80 font-anka-coder"
                   >
                     interest form
                   </Link>

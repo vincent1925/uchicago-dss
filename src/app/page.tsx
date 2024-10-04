@@ -4,6 +4,7 @@ import Blog from "@/components/Blog";
 import ScrollUp from "@/components/Common/ScrollUp";
 import Contact from "@/components/Contact";
 import Hero from "@/components/Hero";
+import People from "@/components/People/people";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -21,7 +22,8 @@ export default function Home() {
         <AboutSectionOne />
       </div>
       <AboutSectionTwo />
-      <Blog />
+      <People />
+      {/* <Blog /> */}
       <Contact />
     </>
   );

@@ -61,22 +61,22 @@ const Contact = () => {
         <div className="flex justify-center">
           <div className="w-full px-4 lg:w-7/12 xl:w-8/12">
             <div
-              className="mb-12 rounded-sm bg-white px-8 py-11 shadow-three dark:bg-gray-dark sm:p-[55px] lg:mb-5 lg:px-8 xl:p-[55px]"
+              className="mb-12 rounded-2xl bg-white px-8 py-11 shadow-three dark:bg-gray-dark-2xl:p-[55px] lg:mb-5 lg:px-8 xl:p-[55px]"
               data-wow-delay=".15s
               "
             >
-              <h2 className="mb-3 text-2xl font-bold text-black dark:text-white sm:text-3xl lg:text-2xl xl:text-3xl">
-                Need Help? Open a Ticket
+              <h2 className="mb-3 text-2xl font-bold text-black dark:text-white-2xl:text-3xl lg:text-4xl xl:text-4xl font-anka-coder">
+                Are you an organization or indivial that wants to collaborate? Fill out the form below.
               </h2>
-              <p className="mb-12 text-base font-medium text-body-color">
+              <p className="mb-12 text-lg font-medium text-body-color font-anka-coder">
                 Our support team will get back to you ASAP via email.
               </p>
               {/* Success and Error Messages */}
               {status.success && (
-                <p className="text-green-500">Ticket submitted successfully!</p>
+                <p className="text-green-500 font-anka-coder">Ticket submitted successfully!</p>
               )}
               {status.error && (
-                <p className="text-green-500">Ticket submitted successfully!</p>
+                <p className="text-green-500 font-anka-coder">Ticket submitted successfully!</p>
               )}
 
               <form onSubmit={submitTicket}>
@@ -85,7 +85,7 @@ const Contact = () => {
                     <div className="mb-8">
                       <label
                         htmlFor="name"
-                        className="mb-3 block text-sm font-medium text-dark dark:text-white"
+                        className="mb-3 block text-2xl font-medium text-dark dark:text-white font-anka-coder"
                       >
                         Your Name
                       </label>
@@ -95,7 +95,7 @@ const Contact = () => {
                         value={formData.name}
                         onChange={handleInputChange}
                         placeholder="Enter your name"
-                        className="border-stroke w-full rounded-sm border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:text-body-color-dark dark:shadow-two dark:focus:border-primary dark:focus:shadow-none"
+                        className="border-stroke w-full rounded-2xl border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:text-body-color-dark dark:shadow-two dark:focus:border-primary dark:focus:shadow-none font-anka-coder"
                         required
                       />
                     </div>
@@ -104,7 +104,7 @@ const Contact = () => {
                     <div className="mb-8">
                       <label
                         htmlFor="email"
-                        className="mb-3 block text-sm font-medium text-dark dark:text-white"
+                        className="mb-3 block text-2xl font-medium text-dark dark:text-white font-anka-coder"
                       >
                         Your Email
                       </label>
@@ -114,7 +114,7 @@ const Contact = () => {
                         value={formData.email}
                         onChange={handleInputChange}
                         placeholder="Enter your email"
-                        className="border-stroke w-full rounded-sm border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:text-body-color-dark dark:shadow-two dark:focus:border-primary dark:focus:shadow-none"
+                        className="border-stroke w-full rounded-2xl border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:text-body-color-dark dark:shadow-two dark:focus:border-primary dark:focus:shadow-none font-anka-coder"
                         required
                       />
                     </div>
@@ -123,7 +123,7 @@ const Contact = () => {
                     <div className="mb-8">
                       <label
                         htmlFor="message"
-                        className="mb-3 block text-sm font-medium text-dark dark:text-white"
+                        className="mb-3 block text-2xl font-medium text-dark dark:text-white font-anka-coder"
                       >
                         Your Message
                       </label>
@@ -133,7 +133,7 @@ const Contact = () => {
                         onChange={handleInputChange}
                         rows={5}
                         placeholder="Enter your Message"
-                        className="border-stroke w-full resize-none rounded-sm border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:text-body-color-dark dark:shadow-two dark:focus:border-primary dark:focus:shadow-none"
+                        className="border-stroke w-full resize-none rounded-2xl border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:text-body-color-dark dark:shadow-two dark:focus:border-primary dark:focus:shadow-none font-anka-coder"
                         required
                       ></textarea>
                     </div>
@@ -141,10 +141,10 @@ const Contact = () => {
                   <div className="w-full px-4">
                     <button
                       type="submit"
-                      className="rounded-sm bg-primary px-9 py-4 text-base font-medium text-white shadow-submit duration-300 hover:bg-primary/90 dark:shadow-submit-dark"
+                      className="rounded-2xl bg-primary px-9 py-4 text-base font-medium text-white shadow-submit duration-300 hover:bg-primary/90 dark:shadow-submit-dark font-anka-coder"
                       disabled={status.loading}
                       >
-                      {status.loading ? "Submitting..." : "Submit Ticket"}
+                      {status.loading ? "Submitting..." : "Submit Message"}
                     </button>
                   </div>
                 </div>

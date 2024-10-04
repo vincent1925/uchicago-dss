@@ -101,7 +101,7 @@ const Header = () => {
                         {menuItem.path ? (
                           <Link
                             href={menuItem.path}
-                            className={`flex py-2 text-base lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 font-anka-coder ${
+                            className={`flex py-2 text-lg lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 font-anka-coder ${
                               usePathName === menuItem.path
                                 ? "text-primary dark:text-white"
                                 : "text-dark hover:text-primary dark:text-white/70 dark:hover:text-white"
