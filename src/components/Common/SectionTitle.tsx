@@ -32,21 +32,24 @@ const SectionTitle = ({
         >
           {title}
         </h1>
-        <h2
-          className="
-          mb-4 
-          text-xl 
-          font-bold 
-          text-black 
-          dark:text-white 
-          sm:text-xl
-          md:text-xl
-          lg:text-xl
-          xl:text-xl
-          font-anka-coder"
-        >
-          {description}
-        </h2>
+        {/* Render description only if it's provided */}
+        {description && ( 
+          <h2
+            className="
+            mb-4 
+            text-xl 
+            font-bold 
+            text-black 
+            dark:text-white 
+            sm:text-xl
+            md:text-xl
+            lg:text-xl
+            xl:text-xl
+            font-anka-coder"
+          >
+            {description}
+          </h2>
+        )}
         <p 
           className={`
             w-full
