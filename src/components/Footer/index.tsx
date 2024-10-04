@@ -113,36 +113,13 @@ const Footer = () => {
                   </a>
                 </div>
               </div>
-            </div>
-
-            {/* <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-2/12">
-              <div className="mb-6 lg:mb-8">
-                <ul className="flex space-x-4">
-                  <li>
-                    <Link
-                      href="/blog"
-                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
-                    >
-                      blog
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/"
-                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
-                    >
-                      pricing
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/about"
-                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
-                    >
-                      about
-                    </Link>
-                  </li>
-                </ul>
+              <div className="container">
+                <div className="flex flex-col items-center justify-center">
+                  {/* DSS Text */}
+                  <span className="text-2xl text-black font-bold font-anka-coder">
+                    dss
+                  </span>
+                </div>
               </div>
             </div> */}
           </div>
@@ -151,23 +128,6 @@ const Footer = () => {
           <div className="py-8">
             <p className="text-center text-base text-body-color dark:text-white">
               copyright 2024 © data science society, all rights reserved
-              {/* <a
-                href="http://uideck.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-primary"
-              >
-                UIdeck
-              </a>{" "}
-              and{" "}
-              <a
-                href="https://nextjstemplates.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-primary"
-              >
-                Next.js Templates
-              </a> */}
             </p>
           </div>
         </div>
