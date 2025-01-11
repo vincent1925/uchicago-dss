@@ -8,14 +8,14 @@ interface ProfileCardProps {
 
 const ProfileCard: React.FC<ProfileCardProps> = ({ name, role, image }) => {
   return (
-    <div className="items-center bg-gray-50 rounded-xl shadow w-auto h-auto dark:bg-gray-800 dark:border-gray-700">
+    <div className="items-center bg-gray-50 rounded-xl shadow w-64 h-84 dark:bg-gray-800 dark:border-gray-700">
       <a href="#">
         <Image
           src={image}
           alt={name}
           width={500}
           height={500}
-          className="w-auto h-auto opacity-100 rounded-xl transform scale-x-[-1]"
+           className="w-64 h-64 object-cover rounded-xl"
         />
       </a>
       <div className="p-5">
