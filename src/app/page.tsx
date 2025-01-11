@@ -21,10 +21,10 @@ export default function Home() {
         <Hero />
         <AboutSectionOne />
       </div>
-      <AboutSectionTwo />
-      <People />
+      {/* <AboutSectionTwo /> */}
+      {/* <People /> */}
       {/* <Blog /> */}
-      <Contact />
+      {/* <Contact /> */}
     </>
   );
 }
