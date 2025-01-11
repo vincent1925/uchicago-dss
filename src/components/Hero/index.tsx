@@ -41,7 +41,7 @@ const Hero = () => {
                 </p>
                 <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
                   <Link
-                    href="https://forms.gle/wdyJ9c2dTtBMiaVLA"
+                    href="https://forms.gle/fpwrfu93D72PhxJM9"
                     className="rounded-sm bg-primary px-8 py-4 text-lg font-semibold text-white duration-300 ease-in-out hover:bg-primary/80 font-anka-coder"
                   >
                     interest form
