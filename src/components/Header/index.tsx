@@ -41,21 +41,25 @@ const Header = () => {
   return (
     <>
       <header
-        className={`header left-0 top-5 z-40 flex w-full items-center ${
+        className={`header left-0 z-40 flex w-full items-center ${
           sticky
             ? "dark:bg-gray-dark dark:shadow-sticky-dark fixed z-[9999] bg-white !bg-opacity-80 shadow-sticky backdrop-blur-sm transition"
             : "absolute bg-transparent"
         }`}
+        style={{
+          height: "100px",
+          padding: "30px 0",
+        }}
       >
         <div className="container">
           <div className="relative -mx-4 flex items-center justify-between">
           <div className="flex items-center px-4 xl:mr-12"> {/* Flex container for logo and text */}
-          <div className="max-w-[140px]">
+          <div className="top-5 max-w-[140px]">
             <Image
               src="images/logo/logo-2.svg"
               alt="logo"
-              height={20}
-              width={20}
+              height={15}
+              width={15}
               className="w-20 h-auto"
             />
           </div>
