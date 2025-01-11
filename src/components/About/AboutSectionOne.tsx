@@ -38,15 +38,14 @@ const AboutSectionOne = () => {
                 className="mb-12 max-w-[570px] lg:mb-0"
                 data-wow-delay=".15s"
               >
-                <div className="mx-[-12px] flex flex-wrap">
-                  <div className="w-full px-3 sm:w-1/2 lg:w-full xl:w-1/2">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-4">
+                  <div>
+                    <List text="causal inference" />
                     <List text="machine learning" />
                     <List text="natural language processing" />
-                    <List text="databases" />
                   </div>
-
-                  <div className="w-full px-3 sm:w-1/2 lg:w-full xl:w-1/2">
-                    <List text="visualization" />
+                  <div>
+                    <List text="data visualization" />
                     <List text="data engineering" />
                     <List text="data scraping" />
                   </div>
