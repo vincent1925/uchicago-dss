@@ -66,10 +66,10 @@ const Contact = () => {
               "
             >
               <h2 className="mb-3 text-2xl font-bold text-black dark:text-white-2xl:text-3xl lg:text-4xl xl:text-4xl font-anka-coder">
-                Are you an organization or individual that wants to collaborate? Fill out the form below.
+                Please contact us if you have any questions about our work.
               </h2>
               <p className="mb-12 text-lg font-medium text-body-color font-anka-coder">
-                Our support team will get back to you ASAP via email.
+                Our board will get back to you via email!
               </p>
               {/* Success and Error Messages */}
               {status.success && (
