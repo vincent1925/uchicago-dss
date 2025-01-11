@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const People = () => {
     return(
-        <section className="pt-2 md:pt-4 lg:pt-6 bg-custom-purple">
+        <section className="pt-12 md:pt-18 lg:pt-24 bg-custom-purple">
         <div className="py-8 px-6 mx-auto max-w-screen-xl lg:py-10 lg:px-9 ">
             <div className="mx-auto max-w-screen-xl text-center mb-8 lg:mb-16">
                 <SectionTitle
@@ -15,16 +15,16 @@ const People = () => {
                     titleClassName="font-anka-coder"
                     paragraphClassName="font-anka-coder"
                 />
-            </div> 
+            </div>
             <div className="grid gap-8 mb-6 lg:mb-16 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
                 <div className="items-center bg-gray-50 rounded-xl shadow w-auto dark:bg-gray-800 dark:border-gray-700">
                     <a href="#">
                         <Image
                             src="images/people/vincent.jpg"
                             alt="vincent"
-                            width={500} 
-                            height={500} 
-                            className="w-auto h-auto opacity-100 rounded-xl transform scale-x-[-1]" 
+                            width={500}
+                            height={500}
+                            className="w-auto h-auto opacity-100 rounded-xl transform scale-x-[-1]"
                         />
                     </a>
                     <div className="p-5">
@@ -55,17 +55,17 @@ const People = () => {
                                 </a>
                             </li>
                         </ul>  */}
-                        
+
                     </div>
-                </div>            
+                </div>
                 <div className="items-center bg-gray-50 rounded-xl shadow w-auto h-auto dark:bg-gray-800 dark:border-gray-700">
                     <a href="#">
                         <Image
                             src="/images/people/vincent.jpg"
                             alt="vincent"
-                            width={500} 
+                            width={500}
                             height={500}
-                            className="w-auto h-auto opacity-100 rounded-xl transform scale-x-[-1]" 
+                            className="w-auto h-auto opacity-100 rounded-xl transform scale-x-[-1]"
                         />
                     </a>
                     <div className="p-5">
@@ -80,9 +80,9 @@ const People = () => {
                         <Image
                             src="/images/people/vincent.jpg"
                             alt="vincent"
-                            width={500} 
+                            width={500}
                             height={500}
-                            className="w-auto h-auto opacity-100 rounded-xl transform scale-x-[-1]" 
+                            className="w-auto h-auto opacity-100 rounded-xl transform scale-x-[-1]"
                         />
                     </a>
                     <div className="p-5">
@@ -97,9 +97,9 @@ const People = () => {
                         <Image
                             src="/images/people/vincent.jpg"
                             alt="vincent"
-                            width={500} 
+                            width={500}
                             height={500}
-                            className="w-auto h-auto opacity-100 rounded-xl transform scale-x-[-1]" 
+                            className="w-auto h-auto opacity-100 rounded-xl transform scale-x-[-1]"
                         />
                     </a>
                     <div className="p-5">
@@ -114,9 +114,9 @@ const People = () => {
                         <Image
                             src="/images/people/vincent.jpg"
                             alt="vincent"
-                            width={500} 
+                            width={500}
                             height={500}
-                            className="w-auto h-auto opacity-100 rounded-xl transform scale-x-[-1]" 
+                            className="w-auto h-auto opacity-100 rounded-xl transform scale-x-[-1]"
                         />
                     </a>
                     <div className="p-5">
@@ -131,9 +131,9 @@ const People = () => {
                         <Image
                             src="/images/people/vincent.jpg"
                             alt="vincent"
-                            width={500} 
+                            width={500}
                             height={500}
-                            className="w-auto h-auto opacity-100 rounded-xl transform scale-x-[-1]" 
+                            className="w-auto h-auto opacity-100 rounded-xl transform scale-x-[-1]"
                         />
                     </a>
                     <div className="p-5">
@@ -144,7 +144,7 @@ const People = () => {
                     </div>
                 </div>
             </div>
-              
+
         </div>
         </section>
         );
