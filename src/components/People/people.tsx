@@ -18,9 +18,9 @@ const People: React.FC = () => {
     { name: "rain hu", role: "project manager", image: "/images/people/vincent.jpg" },
     { name: "anisha sawhney", role: "outreach and external relations coordinator", image: "/images/people/vincent.jpg" },
     { name: "susana cook", role: "events coordinator", image: "/images/people/vincent.jpg" },
-    { name: "nolan johnson", role: "technical workshop leader", image: "/images/people/vincent.jpg" },
-    { name: "irene shin", role: "secretary", image: "/images/people/vincent.jpg" },
-    { name: "chloe yoo", role: "first year representative", image: "/images/people/vincent.jpg" },
+    { name: "nolan johnson", role: "technical workshop leader", image: "/images/people/nolan.jpg" },
+    { name: "irene shin", role: "secretary", image: "/images/people/irene.jpg" },
+    { name: "chloe yoo", role: "first year representative", image: "/images/people/chloe.jpg" },
     { name: "uziel garcia", role: "first year representative", image: "/images/people/vincent.jpg" },
   ];
 
