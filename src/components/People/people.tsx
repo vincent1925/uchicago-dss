@@ -1,27 +1,34 @@
 import SectionTitle from "../Common/SectionTitle";
 import ProfileCard from "../People/ProfileCard";
+import ProfileCardNoPhoto from "./ProfileCardNoPhoto";
 
 interface TeamMember {
   name: string;
   role: string;
   image: string;
 }
+interface NoPhotoTeamMember {
+  name: string;
+  role: string;
+}
 
 const People: React.FC = () => {
   const teamMembers: TeamMember[] = [
     { name: "vincent zheng", role: "co-president", image: "/images/people/vincent.jpg" },
-    { name: "rain liu", role: "co-president", image: "/images/people/vincent.jpg" },
+    { name: "rain liu", role: "co-president", image: "/images/people/rainliu.jpg" },
     { name: "mark xiong", role: "web developer", image: "/images/people/mark.jpg" },
-    { name: "ryan lee", role: "treasurer", image: "/images/people/vincent.jpg" },
-    { name: "victoria karai", role: "project manager", image: "/images/people/vincent.jpg" },
+    { name: "ryan lee", role: "treasurer", image: "/images/people/ryan.jpeg" },
     { name: "cynthia zeng", role: "project manager", image: "/images/people/cynthia.jpeg" },
-    { name: "rain hu", role: "project manager", image: "/images/people/vincent.jpg" },
-    { name: "anisha sawhney", role: "outreach and external relations coordinator", image: "/images/people/vincent.jpg" },
-    { name: "susana cook", role: "events coordinator", image: "/images/people/vincent.jpg" },
-    { name: "nolan johnson", role: "technical workshop leader", image: "/images/people/vincent.jpg" },
-    { name: "irene shin", role: "secretary", image: "/images/people/vincent.jpg" },
-    { name: "chloe yoo", role: "first year representative", image: "/images/people/vincent.jpg" },
-    { name: "uziel garcia", role: "first year representative", image: "/images/people/vincent.jpg" },
+    { name: "rain hu", role: "project manager", image: "/images/people/rainhu.jpg" },
+    { name: "anisha sawhney", role: "outreach coordinator", image: "/images/people/anisha.jpeg" },
+    { name: "susana cook", role: "events coordinator", image: "/images/people/susana.png" },
+    { name: "nolan johnson", role: "technical workshop leader", image: "/images/people/nolan.jpg" },
+    { name: "irene shin", role: "secretary", image: "/images/people/irene.jpg" },
+    { name: "chloe yoo", role: "first year representative", image: "/images/people/chloe.jpg" },
+    { name: "uziel garcia", role: "first year representative", image: "/images/people/uzi.png" },
+  ];
+  const teamMembers_2: NoPhotoTeamMember[] = [
+    { name: "victoria karai", role: "project manager"},
   ];
 
   return (
@@ -38,7 +45,7 @@ const People: React.FC = () => {
             paragraphClassName="font-anka-coder"
           />
         </div>
-        <div className="grid gap-6 mb-6 lg:mb-16 grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-auto-fit xl:grid-cols-auto-fit justify-items-center">
+        <div className="grid gap-6 mb-6 lg:mb-16 grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-auto-fit xl:grid-cols-auto-fit place-items-center">
           {teamMembers.map((member, index) => (
             <ProfileCard
               key={index}
@@ -47,6 +54,10 @@ const People: React.FC = () => {
               image={member.image}
             />
           ))}
+
+        </div>
+        <div className="grid gap-6 mb-6 lg:mb-16 grid-cols-1 place-items-center">
+          <ProfileCardNoPhoto name={teamMembers_2[0].name} role={teamMembers_2[0].role} />
         </div>
       </div>
     </section>
