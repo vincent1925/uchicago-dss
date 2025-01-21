@@ -15,7 +15,7 @@ interface NoPhotoTeamMember {
 const People: React.FC = () => {
   const teamMembers: TeamMember[] = [
     { name: "vincent zheng", role: "co-president", image: "/images/people/vincent.jpg" },
-    { name: "rain liu", role: "co-president", image: "/images/people/vincent.jpg" },
+    { name: "rain liu", role: "co-president", image: "/images/people/rainliu.jpg" },
     { name: "mark xiong", role: "web developer", image: "/images/people/mark.jpg" },
     { name: "ryan lee", role: "treasurer", image: "/images/people/ryan.jpeg" },
     { name: "cynthia zeng", role: "project manager", image: "/images/people/cynthia.jpeg" },
