@@ -26,7 +26,7 @@ const AboutSectionOne = () => {
           <div className="-mx-4 flex flex-wrap items-center">
             <div className="w-full px-4 lg:w-1/2">
               <SectionTitle
-                title="the university of chicago's premier data science club is doing a workshop rn"
+                title="the university of chicago's premier data science club"
                 description={""}
                 paragraph="first data science club on campus with qualified RSO status. we are a group of students who are passionate about data science and its applications in various fields."
                 mb="44px"
