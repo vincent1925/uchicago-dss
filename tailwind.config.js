@@ -28,7 +28,6 @@ module.exports = {
         current: "currentColor",
         white: "#FFFFFF",
         black: "#5A5092",
-        // rename “dark” to match your usage, or adjust your classes below
         "dark-2": "#1D2430",      
         "bg-color-dark": "#171C28",
         primary: "#5A5092",
@@ -67,7 +66,7 @@ module.exports = {
       },
     },
   },
-  plugins: [
-    require("@tailwindcss/aspect-ratio"),
-  ],
+  // plugins: [
+  //   require("@tailwindcss/aspect-ratio"),
+  // ],
 };

@@ -8,8 +8,10 @@ const SingleProject = ({ project }: { project: Project }) => {
   return (
     <div className="dark:bg-dark-2 w-full overflow-hidden rounded-lg bg-white shadow-md transition-shadow duration-300 hover:shadow-lg">
       <Link href={link} className="block">
-        <div className="relative aspect-video w-full">
-          <Image src={image} alt={title} fill className="object-cover" />
+        <div className="rounded-lg p-3">
+          <div className="relative aspect-video w-full ">
+            <Image src={image} alt={title} fill className="object-contain" />
+          </div>
         </div>
       </Link>
 
@@ -17,7 +19,7 @@ const SingleProject = ({ project }: { project: Project }) => {
         <h3>
           <Link
             href={link}
-            className="mb-4 block text-xl font-bold text-black hover:text-primary dark:text-white dark:hover:text-primary sm:text-2xl"
+            className="font-anka-coder mb-4 block text-center text-xl text-black hover:text-primary dark:text-white dark:hover:text-primary sm:text-2xl"
           >
             {title}
           </Link>
