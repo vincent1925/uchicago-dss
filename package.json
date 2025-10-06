@@ -20,6 +20,7 @@
   },
   "devDependencies": {
     "@tailwindcss/aspect-ratio": "^0.4.2",
+    "@tailwindcss/postcss": "^4.1.14",
     "@types/node": "^20.8.9",
     "@types/react": "^18.2.33",
     "autoprefixer": "^10.4.17",
