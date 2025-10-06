@@ -27,6 +27,18 @@ const menuData: Menu[] = [
   },
   {
     id: 4,
+    title: "events",
+    path: "/events",
+    newTab: false,
+  },
+  {
+    id: 5,
+    title: "join us",
+    path: "/join",
+    newTab: false,
+  },
+  {
+    id: 6,
     title: "contact us",
     path: "/contact",
     newTab: false,
