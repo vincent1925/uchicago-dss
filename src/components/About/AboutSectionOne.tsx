@@ -10,7 +10,7 @@ const checkIcon = (
 const AboutSectionOne = () => {
   const List = ({ text }) => (
     <p className="mb-5 flex items-center text-sm font-anka-coder text-body-color">
-      <span className="mr-4 flex h-[30px] w-[30px] items-center justify-center rounded-md bg-primary bg-opacity-10 text-primary">
+      <span className="mr-4 flex h-[30px] w-[30px] items-center justify-center rounded-md bg-primary/10 text-primary">
         {checkIcon}
       </span>
       {text}
@@ -54,13 +54,13 @@ const AboutSectionOne = () => {
             </div>
 
             <div className="w-full px-4 lg:w-1/2">
-              <div className="relative mx-auto aspect-[25/24] max-w-[500px] lg:mr-0">
+              <div className="relative mx-auto w-full max-w-[500px] lg:mr-0">
                 <Image
                   src="images/logo/logo-2.svg"
                   alt="Flipped Logo"
                   width={500}
                   height={480}
-                  className="w-30 h-auto opacity-50 transform scale-x-[-1]"
+                  className="h-auto w-full opacity-50 transform scale-x-[-1]"
                 />
               </div>
             </div>

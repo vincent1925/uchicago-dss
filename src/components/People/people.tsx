@@ -5,9 +5,8 @@ import alumni from "./data/alumni";
 import board from "./data/board";
 
 const People: React.FC = () => {
-
   return (
-    <section className="md:pt-18 bg-custom-purple pt-12 lg:pt-24">
+    <section className="bg-custom-purple pt-12 md:pt-18 lg:pt-24">
       <div className="mx-auto max-w-screen-xl px-6 py-8 lg:px-9 lg:py-10">
         <div className="mx-auto mb-8 max-w-screen-xl text-center lg:mb-16">
           <SectionTitle
@@ -30,8 +29,12 @@ const People: React.FC = () => {
                 image={member.image}
               />
             ) : (
-              <ProfileCardNoPhoto key={index} name={member.name} role={member.role} />
-            )
+              <ProfileCardNoPhoto
+                key={index}
+                name={member.name}
+                role={member.role}
+              />
+            ),
           )}
         </div>
 
@@ -57,7 +60,9 @@ const People: React.FC = () => {
               {/* Alumni with photos: centered row(s) */}
               <div className="mb-4 flex flex-wrap justify-center gap-6">
                 {alumniWithPhotos.map((a, i) => {
-                  const roleWithYear = [a.role, a.year].filter(Boolean).join(" · ");
+                  const roleWithYear = [a.role, a.year]
+                    .filter(Boolean)
+                    .join(" · ");
                   return (
                     <ProfileCard
                       key={`alumni-photo-${i}`}
@@ -73,7 +78,9 @@ const People: React.FC = () => {
               {alumniNoPhotos.length > 0 && (
                 <div className="mb-6 flex flex-wrap justify-center gap-6 lg:mb-8">
                   {alumniNoPhotos.map((a, i) => {
-                    const roleWithYear = [a.role, a.year].filter(Boolean).join(" · ");
+                    const roleWithYear = [a.role, a.year]
+                      .filter(Boolean)
+                      .join(" · ");
                     return (
                       <ProfileCardNoPhoto
                         key={`alumni-nophoto-${i}`}

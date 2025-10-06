@@ -6,7 +6,7 @@ const SectionTitle = ({
   center,
   mb = "100px",
   titleClassName = "",
-  paragraphClassName = "", // This can be optional now
+  paragraphClassName = "",
 }) => {
   return (
     <>
@@ -16,53 +16,18 @@ const SectionTitle = ({
         style={{ maxWidth: width, marginBottom: mb }}
       >
         <h1
-          className={`
-            mb-4 
-            w-full
-            font-bold 
-            !leading-tight 
-            text-black 
-            dark:text-white 
-            sm:text-4xl
-            md:text-4xl
-            lg:text-4xl
-            xl:text-4xl
-            ${titleClassName}`
-          }
+          className={`mb-4 w-full !leading-tight font-bold text-black sm:text-4xl md:text-4xl lg:text-4xl xl:text-4xl dark:text-white ${titleClassName}`}
         >
           {title}
         </h1>
         {/* Render description only if it's provided */}
-        {description && ( 
-          <h2
-            className="
-            mb-4 
-            text-xl 
-            font-bold 
-            text-black 
-            dark:text-white 
-            sm:text-xl
-            md:text-xl
-            lg:text-xl
-            xl:text-xl
-            font-anka-coder"
-          >
+        {description && (
+          <h2 className="font-anka-coder mb-4 text-xl font-bold text-black sm:text-xl md:text-xl lg:text-xl xl:text-xl dark:text-white">
             {description}
           </h2>
         )}
-        <p 
-          className={`
-            w-full
-            text-base 
-            font-normal 
-            !leading-relaxed 
-            text-body-color 
-            sm:text-lg
-            md:text-lg
-            lg:text-lg
-            xl:text-lg
-            ${paragraphClassName}`
-          }
+        <p
+          className={`text-body-color w-full text-base !leading-relaxed font-normal sm:text-lg md:text-lg lg:text-lg xl:text-lg ${paragraphClassName}`}
         >
           {paragraph}
         </p>
