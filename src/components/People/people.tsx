@@ -7,7 +7,7 @@ import board from "./data/board";
 const People: React.FC = () => {
   return (
     <section className="bg-custom-purple pt-12 md:pt-18 lg:pt-24">
-      <div className="mx-auto max-w-screen-xl px-6 py-8 lg:px-9 lg:py-10">
+      <div className="container py-8 lg:py-10">
         <div className="mx-auto mb-8 max-w-screen-xl text-center lg:mb-16">
           <SectionTitle
             title="meet our board!"
