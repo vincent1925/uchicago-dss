@@ -37,7 +37,7 @@ const JoinApplications = () => {
         <div className="mx-auto mb-14 max-w-screen-md text-center lg:mb-16">
           <SectionTitle
             title="interested in joining?"
-            description="here are our open applications."
+            description="Here are our open applications."
             paragraph="Read through the descriptions and apply through the form."
             mb="0px"
             center={true}
