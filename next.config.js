@@ -14,6 +14,7 @@ const nextConfig = {
   },
   assetPrefix: '',
   basePath: '',
+
 };
 
 module.exports = nextConfig;
