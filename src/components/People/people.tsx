@@ -60,9 +60,7 @@ const People: React.FC = () => {
               {/* Alumni with photos: centered row(s) */}
               <div className="mb-4 flex flex-wrap justify-center gap-6">
                 {alumniWithPhotos.map((a, i) => {
-                  const roleWithYear = [a.role, a.year]
-                    .filter(Boolean)
-                    .join(" · ");
+                  const roleWithYear = [a.year].filter(Boolean).join(" · ");
                   return (
                     <ProfileCard
                       key={`alumni-photo-${i}`}
@@ -78,9 +76,7 @@ const People: React.FC = () => {
               {alumniNoPhotos.length > 0 && (
                 <div className="mb-6 flex flex-wrap justify-center gap-6 lg:mb-8">
                   {alumniNoPhotos.map((a, i) => {
-                    const roleWithYear = [a.role, a.year]
-                      .filter(Boolean)
-                      .join(" · ");
+                    const roleWithYear = [a.year].filter(Boolean).join(" · ");
                     return (
                       <ProfileCardNoPhoto
                         key={`alumni-nophoto-${i}`}
