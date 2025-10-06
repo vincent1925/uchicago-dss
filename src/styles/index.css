@@ -1,11 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+
+@import "tailwindcss";
 
 /* Tailwind CSS v4 theme tokens migrated from tailwind.config.js */
 @theme {
+  
   /* Colors */
   --color-white: #ffffff;
   --color-black: #5a5092;
@@ -16,6 +16,7 @@
   --color-body-color-dark: #663b94;
   --color-gray-light: #f0f2f9;
   --color-gray-dark: #d5ddef;
+  
 
   /* Box shadows */
   --shadow-sign-up: 0px 5px 10px rgba(4, 10, 34, 0.2);
@@ -70,6 +71,8 @@
   }
 }
 
+@custom-variant dark (&:where(.dark *));
+
 @layer components {
   input[type="checkbox"]:checked ~ label span svg {
     @apply inline-flex;
@@ -98,6 +101,46 @@
 
 /* Add utility class for Anka Coder font */
 @layer utilities {
+  .container {
+    width: 100%;
+    margin-inline: auto;
+    padding-inline: 1rem;
+  }
+
+  @media (min-width: 640px) {
+    .container {
+      max-width: 640px;
+      padding-inline: 1.5rem;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .container {
+      max-width: 768px;
+      padding-inline: 2rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .container {
+      max-width: 1024px;
+      padding-inline: 2.5rem;
+    }
+  }
+
+  @media (min-width: 1280px) {
+    .container {
+      max-width: 1280px;
+      padding-inline: 3rem;
+    }
+  }
+
+  @media (min-width: 1536px) {
+    .container {
+      max-width: 1360px;
+    }
+  }
+
   .font-anka-coder {
     font-family: 'Anka Coder', monospace;
   }
