@@ -76,7 +76,7 @@ const autumn2025: QuarterEvents = {
         startDate: "2025-10-07",
         occurrences: 10,
         skipDates: ["2025-11-25"],
-        time: "7:00 – 8:00 PM CT",
+        time: "6:00 - 7:00 PM CT",
         description:
           "Meet with DSS  for updates, project support, and planning.",
       }),
