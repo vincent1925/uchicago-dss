@@ -154,7 +154,7 @@ const Header = () => {
                                 </button>
                               </div>
                               <div
-                                className={`submenu relative top-full left-0 rounded-sm bg-custom-purple transition-[top] duration-300 group-hover:opacity-100 lg:invisible lg:absolute lg:top-[104%] lg:block lg:w-[250px] lg:p-2 lg:opacity-0 lg:shadow-none lg:group-hover:visible lg:group-hover:top-full ${
+                                className={`submenu relative top-full left-0 rounded-sm bg-[#f2eaff] transition-[top] duration-300 group-hover:opacity-100 lg:invisible lg:absolute lg:top-[104%] lg:block lg:w-[250px] lg:p-2 lg:opacity-0 lg:shadow-none lg:group-hover:visible lg:group-hover:top-full ${
                                   openIndex === index ? "block" : "hidden"
                                 }`}
                               >
