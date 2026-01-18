@@ -92,7 +92,7 @@ const QuarterlyEvents = ({
   );
 
   return (
-    <section className="bg-gradient-to-b from-white via-[#fef8ff] to-white py-16 md:py-20 lg:py-24">
+    <section className="bg-gradient-to-b from-white via-[#f2eaff] to-white py-16 md:py-20 lg:py-24">
       <div className="container">
         <SectionTitle
           title="quarterly events"

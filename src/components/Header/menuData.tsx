@@ -7,35 +7,55 @@ const menuData: Menu[] = [
     path: "/",
     newTab: false,
   },
-  // {
-  //   id: 2,
-  //   title: "about",
-  //   path: "/about",
-  //   newTab: false,
-  // },
-  { 
+  {
     id: 2,
-    title: "projects",
-    path: "/projects",
-    newTab: false,
-  },
-  {
-    id: 3,
-    title: "people",
-    path: "/people",
-    newTab: false,
-  },
-  {
-    id: 4,
     title: "events",
     path: "/events",
     newTab: false,
   },
   {
-    id: 5,
+    id: 3,
+    title: "projects",
+    path: "/projects",
+    newTab: false,
+  },
+  {
+    id: 4,
     title: "join us",
     path: "/join",
     newTab: false,
+  },
+  {
+    id: 5,
+    title: "people",
+    path: "/people",
+    newTab: false,
+    submenu: [
+      {
+        id: 31,
+        title: "board",
+        path: "/people",
+        newTab: false,
+      },
+      {
+        id: 32,
+        title: "committee members",
+        path: "/people/committee",
+        newTab: false,
+      },
+      {
+        id: 33,
+        title: "project leaders",
+        path: "/people/project-leaders",
+        newTab: false,
+      },
+      {
+        id: 34,
+        title: "alumni",
+        path: "/people/alumni",
+        newTab: false,
+      },
+    ],
   },
   {
     id: 6,
@@ -43,60 +63,5 @@ const menuData: Menu[] = [
     path: "/contact",
     newTab: false,
   },
-  // {
-  //   id: 4,
-  //   title: "Pages",
-  //   newTab: false,
-  //   submenu: [
-  //     {
-  //       id: 41,
-  //       title: "About Page",
-  //       path: "/about",
-  //       newTab: false,
-  //     },
-  //     {
-  //       id: 42,
-  //       title: "Contact Page",
-  //       path: "/contact",
-  //       newTab: false,
-  //     },
-  //     {
-  //       id: 43,
-  //       title: "Blog Grid Page",
-  //       path: "/blog",
-  //       newTab: false,
-  //     },
-  //     {
-  //       id: 44,
-  //       title: "Blog Sidebar Page",
-  //       path: "/blog-sidebar",
-  //       newTab: false,
-  //     },
-  //     {
-  //       id: 45,
-  //       title: "Blog Details Page",
-  //       path: "/blog-details",
-  //       newTab: false,
-  //     },
-  //     {
-  //       id: 46,
-  //       title: "Sign In Page",
-  //       path: "/signin",
-  //       newTab: false,
-  //     },
-  //     {
-  //       id: 47,
-  //       title: "Sign Up Page",
-  //       path: "/signup",
-  //       newTab: false,
-  //     },
-  //     {
-  //       id: 48,
-  //       title: "Error Page",
-  //       path: "/error",
-  //       newTab: false,
-  //     },
-  //   ],
-  // },
 ];
 export default menuData;
