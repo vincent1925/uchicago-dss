@@ -6,7 +6,7 @@ export type BoardMember = {
 };
 
 const board: BoardMember[] = [
-  { name: "vincent zheng", role: "co-president", image: "/images/people/cynthia.jpg" },
+  { name: "vincent zheng", role: "co-president", image: "/images/people/vincent.jpg" },
   { name: "cynthia zeng", role: "co-president", image: "/images/people/cynthia.jpg" },
   { name: "rain hu", role: "project manager", image: "/images/people/rainhu.jpg" },
   { name: "anisha sawhney", role: "outreach coordinator", image: "/images/people/anisha.jpeg" },
