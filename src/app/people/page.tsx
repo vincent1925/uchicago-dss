@@ -1,13 +1,7 @@
 import People from "@/components/People/people";
-import Breadcrumb from "@/components/Common/Breadcrumb";
 
-
-const AboutPage = () => {
-  return (
-    <>
-      <People />
-    </>
-  );
+const PeoplePage = () => {
+  return <People />;
 };
 
-export default AboutPage;
+export default PeoplePage;
