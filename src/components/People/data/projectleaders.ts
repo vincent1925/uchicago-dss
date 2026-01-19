@@ -10,10 +10,10 @@ const projectleader: ProjectLeader[] = [
   { name: "cynthia zeng", role: "misinformation and ai, political bias", image: "/images/people/cynthia.jpg" },
   { name: "rain hu", role: "crime + education, high risk intersection", image: "/images/people/rainhu.jpg" },
   { name: "joe moon", role: "moneyball", image: "/images/people/joe.jpeg" },
-  { name: "jules ruiz", role: "moneyball" },
+  { name: "jules ruiz", role: "moneyball", image: "/images/people/jules.jpg" },
   { name: "la’tahvia williams", role: "banned books, missing people", image: "/images/people/tahvia.png" },
   { name: "merina diaz", role: "social science reproduction", image: "/images/people/merina.jpg" },
-  { name: "edgar san jose", role: "social science reproduction"}
+  { name: "edgar san jose", role: "social science reproduction", image: "/images/people/edgar.jpg"}
 ];
 
 export default projectleader;
