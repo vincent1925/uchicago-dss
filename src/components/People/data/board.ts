@@ -13,7 +13,8 @@ const board: BoardMember[] = [
   { name: "chloe yoo", role: "social media manager", image: "/images/people/chloe.jpg" },
   { name: "uziel garcia", role: "treasurer", image: "/images/people/uzi.png" },
   { name: "irene shin", role: "secretary", image: "/images/people/irene.jpg" },
-  { name: "nhi nguyen", role: "workshop leader", image: "/images/people/nhi.jpg" }
+  { name: "nhi nguyen", role: "workshop leader", image: "/images/people/nhi.jpg" },
+  { name: "jaimny ruballos", role: "workshop leader" }
   // Add additional board members here.
 ];
 
