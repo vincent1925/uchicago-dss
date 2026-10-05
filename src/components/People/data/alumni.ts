@@ -6,6 +6,8 @@ export type Alumni = {
 };
 
 const alumni: Alumni[] = [
+  { name: "vincent zheng", image: "/images/people/vincent.jpg" },
+  { name: "cynthia zeng", image: "/images/people/cynthia.jpg" },
   { name: "susana cook", year: "2028"},
   { name: "nolan johnson", year: "2028" },
   { name: "mark xiong", year: "2026" },

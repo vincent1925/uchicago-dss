@@ -6,8 +6,6 @@ export type ProjectLeader = {
 };
 
 const projectleader: ProjectLeader[] = [
-  { name: "vincent zheng", role: "causal inference", image: "/images/people/vincent.jpg" },
-  { name: "cynthia zeng", role: "misinformation and ai, political bias", image: "/images/people/cynthia.jpg" },
   { name: "rain hu", role: "crime + education, high risk intersection", image: "/images/people/rainhu.jpg" },
   { name: "joe moon", role: "moneyball", image: "/images/people/joe.jpeg" },
   { name: "jules ruiz", role: "moneyball", image: "/images/people/jules.jpg" },
@@ -17,4 +15,3 @@ const projectleader: ProjectLeader[] = [
 ];
 
 export default projectleader;
-
