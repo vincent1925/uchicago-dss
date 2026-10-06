@@ -1,31 +1,42 @@
 import Link from "next/link";
 import SectionTitle from "../Common/SectionTitle";
+import { joinFormUrls } from "./formLinks";
 
-const committeeApplicationFormUrl = "https://forms.gle/fpwrfu93D72PhxJM9";
-const interestFormUrl =
-  "https://docs.google.com/forms/d/e/1FAIpQLSfXYXlan7YQZCVEqQ01cRJ3CCZAlwQz7uKK6BHFgdjCPSVH-Q/viewform?usp=send_form&usp=embed_facebook";
-
-const committees = [
+const applications = [
   {
-    id: "technical-workshop",
-    name: "technical workshop committee",
+    id: "secretary",
+    name: "secretary",
+    formUrl: joinFormUrls.secretary,
     summary:
-      "Plan and facilitate hands-on workshops that help members practice real-world data science skills.",
+      "Help keep DSS organized and members informed about club activities.",
     highlights: [
-      "Design tutorials and coding walkthroughs for a range of experience levels",
-      "Collaborate with project leads to identify technical topics our members need most",
-      "Support presenters with datasets, slide decks, and follow-up resources",
+      "Maintain meeting notes and club records",
+      "Support communication with members",
+      "Help coordinate club schedules and activities",
     ],
   },
   {
-    id: "events",
-    name: "events committee",
+    id: "project",
+    name: "project member / leader",
+    formUrl: joinFormUrls.project,
     summary:
-      "Create engaging events that bring together students, alumni, and industry partners around data science.",
+      "Work with fellow students on hands-on data science projects as a team member or project leader.",
     highlights: [
+      "Apply data science skills to real-world questions",
+      "Collaborate on research, analysis, and project development",
+      "Help guide a team and share project results",
+    ],
+  },
+  {
+    id: "events-workshop",
+    name: "events / workshop committee",
+    formUrl: joinFormUrls.eventsWorkshop,
+    summary:
+      "Plan workshops and events that bring together students, alumni, and industry partners around data science.",
+    highlights: [
+      "Design tutorials and hands-on coding workshops",
       "Coordinate logistics for panels, mixers, and speaker visits",
       "Lead outreach to partners, campus organizations, and sponsors",
-      "Develop event marketing, timelines, and day-of volunteer schedules",
     ],
   },
 ];
@@ -38,7 +49,7 @@ const JoinApplications = () => {
           <SectionTitle
             title="interested in joining?"
             description="Here are our open applications."
-            paragraph="Read through the descriptions and apply through the form."
+            paragraph="Read through the descriptions and apply through the relevant form."
             mb="0px"
             center={true}
             titleClassName="font-anka-coder"
@@ -47,21 +58,21 @@ const JoinApplications = () => {
         </div>
 
         <div className="grid gap-8 md:grid-cols-2">
-          {committees.map((committee) => (
+          {applications.map((application) => (
             <article
-              key={committee.id}
+              key={application.id}
               className="border-primary/20 shadow-primary/10 flex h-full flex-col rounded-2xl border bg-white/95 p-8 shadow-xl backdrop-blur transition duration-300 hover:-translate-y-1 hover:shadow-2xl lg:p-10"
             >
               <h3 className="font-anka-coder mb-4 text-2xl font-semibold tracking-wide text-black uppercase">
-                {committee.name}
+                {application.name}
               </h3>
               <p className="text-body-color font-anka-coder mb-6 text-base">
-                {committee.summary}
+                {application.summary}
               </p>
               <ul className="text-body-color font-anka-coder mb-8 flex-1 space-y-3 text-base">
-                {committee.highlights.map((highlight, index) => (
+                {application.highlights.map((highlight, index) => (
                   <li
-                    key={`${committee.id}-${index}`}
+                    key={`${application.id}-${index}`}
                     className="flex items-start gap-2"
                   >
                     <span className="bg-primary mt-1 inline-block h-2 w-2 rounded-full" />
@@ -71,7 +82,7 @@ const JoinApplications = () => {
               </ul>
               <div className="text-center md:text-left">
                 <Link
-                  href={committeeApplicationFormUrl}
+                  href={application.formUrl}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-primary hover:bg-primary/80 font-anka-coder inline-block rounded-md px-6 py-3 text-base font-semibold tracking-wide text-white uppercase duration-300"
@@ -92,7 +103,7 @@ const JoinApplications = () => {
             the first to hear about workshops, socials, etc.
           </p>
           <Link
-            href={interestFormUrl}
+            href={joinFormUrls.interest}
             target="_blank"
             rel="noopener noreferrer"
             className="font-anka-coder text-primary inline-block rounded-md bg-white px-6 py-3 text-base font-semibold tracking-wide uppercase duration-300 hover:bg-white/90"
